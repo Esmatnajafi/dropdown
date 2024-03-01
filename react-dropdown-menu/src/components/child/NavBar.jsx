@@ -7,6 +7,7 @@ const NavBar = () => {
             <ul className="menus">
                 {menuItemsData.map((menu, index) => {
                     return(
+                        
                         <MenuItems key={index} items={menu}/>
                     )                
                 })}

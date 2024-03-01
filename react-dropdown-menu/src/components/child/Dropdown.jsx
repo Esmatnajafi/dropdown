@@ -1,10 +1,10 @@
-const Dropdown = ({ childMenus, dropdown }) => {
+import MenuItems from "./MenuItems";
+
+const Dropdown = ({ submenus, dropdown }) => {
     return (
       <ul className={`dropdown ${dropdown ? "show" : ""}`}>
-        {childMenus.map((childMenu, index) => (
-          <li key={index} className="menu-items">
-            <a href={childMenu.url}>{childMenu.title}</a>
-          </li>
+        {submenus.map((submenu, index) => (
+          <MenuItems key={index} items={submenu} />
         ))}
       </ul>
     );

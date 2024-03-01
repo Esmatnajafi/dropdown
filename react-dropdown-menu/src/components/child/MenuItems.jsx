@@ -8,7 +8,7 @@ const MenuItems = ({ items }) => {
 
   return (
     <li className="menu-items">
-      {items.childMenu ? (
+      {items.submenu ? (
         <>
           <button
             type="button"
@@ -16,9 +16,9 @@ const MenuItems = ({ items }) => {
             aria-expanded={dropdown ? "true" : "false"}
             onClick={() => setDropdown(prev => !prev)}
           >
-            {items.title}
+            {items.title}{" "}
           </button>
-          <Dropdown childMenus={items.childMenu} dropdown={dropdown} />
+          <Dropdown submenus={items.submenu} dropdown={dropdown} />
         </>
       ) : (
         <a href={items.url}> {items.title} </a>

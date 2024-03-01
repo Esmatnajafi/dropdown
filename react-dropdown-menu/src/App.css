@@ -1,3 +1,35 @@
+
+
+header{
+    background-color: aquamarine;
+    display: flex;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
 .desktop-nav .dropdown{
     display: none;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+li {
+    text-decoration-line: none;
+    display: block;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
